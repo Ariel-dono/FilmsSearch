@@ -1,0 +1,24 @@
+
+<dataConfig> 
+  <dataSource name="staging"  type="JdbcDataSource" driver="org.duckdb.DuckDBDriver" url="jdbc:duckdb:" /> 
+  <document> 
+    <entity dataSource="staging" name="movies" processor="SqlEntityProcessor" query="SELECT * FROM read_csv_auto('./solr/movies/data/source/imdb.csv', delim=',', header=True);"> 
+	<field column="NAME" name="Name" />
+	<field column="DATE" name="Date" />
+	<field column="RATE" name="Rate" />
+	<field column="VOTES" name="Votes" />
+	<field column="GENRE" name="Genre"/>
+	<field column="DURATION" name="Duration" />
+	<field column="TYPE" name="Type" />
+	<field column="CERTIFICATE" name="Certificate" />
+	<field column="EPISODES" name="Episodes" />
+	<field column="NUDITY" name="Nudity" />
+	<field column="VIOLENCE" name="Violence" />
+	<field column="PROFANITY" name="Profanity" />
+	<field column="ALCOHOL" name="Alcohol" />
+	<field column="FRIGHTENING" name="Frightening" />
+    </entity>
+  </document>
+</dataConfig>
+
+
