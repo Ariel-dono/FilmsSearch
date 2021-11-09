@@ -25,6 +25,7 @@ It is because you can read csv files as an SQL table and load the dataset as an 
     - Set up the secrets management strategy
     - Set up the application observability data management strategy (APM, Activity Logs, Audit Logs, etc)
     - Set up the authorization strategy
+    - Set up environment profiles
 
 #### About the RESTFul API possible improvements:
     - Add the counter before to expose the data for "Not available" information of rates and duration
