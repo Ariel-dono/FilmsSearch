@@ -12,7 +12,7 @@ RESTFul service provisioning search capabilities on top of decentralized dataset
     - Go to http://localhost:8000/swagger-ui/, explore your new search capabilities
 
 #### Why DuckDB?
-It is because you can read csv files as an SQL table and load the dataset as an SQL query with ease.
+Because you can read csv files as an SQL table and load the dataset as an SQL query with ease.
 
 #### Working with Spring Data Solr:
 ###### Pros:
@@ -20,7 +20,7 @@ It is because you can read csv files as an SQL table and load the dataset as an 
 ###### Cons:
     - Facet ranges has not native support
 
-#### Next steps in order to get production ready service:
+#### Next steps in order to get a production-ready service:
     - Security set up both at Solr Instance and RESTFul API (Authentication capabilities by Security providers like SSO Platforms, Active Directory, etc and working on top of JWT validation every request)
     - Set up the secrets management strategy
     - Set up the application observability data management strategy (APM, Activity Logs, Audit Logs, etc)
