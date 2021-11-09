@@ -15,6 +15,9 @@ import org.springframework.data.solr.core.query.SimpleStringCriteria;
 import org.springframework.data.solr.core.query.result.FacetFieldEntry;
 import org.springframework.stereotype.Component;
 
+/*
+* Custom implementation for Facet ranges due to it has not support by Spring Data Solr
+*/
 @Component
 public class FacetingCustomRepository {
     private SolrOperations solrOperations;

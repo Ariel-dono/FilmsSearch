@@ -32,3 +32,4 @@ Because you can read csv files as an SQL table and load the dataset as an SQL qu
     - Move information used in files DurationBin and RateBin to the application.yml
     - Add the counter after to expose the data for "More than 4 hours" over the duration bins definition
     - Detailed configuration of CORS.
+    - Add types Film and Series as Enum catalog  

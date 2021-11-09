@@ -14,7 +14,9 @@ import springfox.documentation.swagger2.annotations.EnableSwagger2;
 @EnableSwagger2
 @Configuration
 public class OpenAPIConfig {
-
+    /*
+     * Setting up the Open API definition and the controllers to be loaded
+     */
     @Bean
     public Docket api() {
         ApiInfo apiInfo = new ApiInfoBuilder()

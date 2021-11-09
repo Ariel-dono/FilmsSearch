@@ -9,6 +9,9 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.data.solr.core.SolrTemplate;
 import org.springframework.data.solr.repository.config.EnableSolrRepositories;
 
+/*
+* Setting up the Solr connection
+*/
 @Configuration
 @EnableSolrRepositories(
         basePackages = "com.insights.dao.repositories",
