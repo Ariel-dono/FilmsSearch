@@ -1,6 +1,8 @@
 # FilmsSearch
 RESTFul service provisioning search capabilities on top of decentralized datasets
 
+JDK version: 11
+
 #### Instructions:
     - Download a Solr instance 
     - Copy ./Solr/third-party/duckdb_jdbc-0.3.0.jar into ./server/lib in your Solr instance path
@@ -33,3 +35,12 @@ Because you can read csv files as an SQL table and load the dataset as an SQL qu
     - Add the counter after to expose the data for "More than 4 hours" over the duration bins definition
     - Detailed configuration of CORS.
     - Add types Film and Series as Enum catalog  
+
+#### Requested indexes: 
+- counting grouped by rating ranges
+- Search by rate ranges and Genre
+- Search by name and sorted by date
+
+#### Complementary indexes:
+- counting grouped by duration ranges
+- Search by duration ranges and production type
