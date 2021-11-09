@@ -1,2 +1,5 @@
 server:
-  port : 8000
+  port: 8000
+
+solr:
+  url: "http://localhost:8983/solr/"
