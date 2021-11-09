@@ -14,9 +14,16 @@ import springfox.documentation.swagger2.annotations.EnableSwagger2;
 @EnableSwagger2
 @Configuration
 public class OpenAPIConfig {
+    /*
+     * Setting up the Open API definition and the controllers to be loaded
+     */
     @Bean
     public Docket api() {
-        ApiInfo apiInfo = new ApiInfoBuilder().description("RESTFul service provisioning search capabilities on top of decentralized datasets").title("FilmsSearch").contact(new Contact("Ariel Herrera", "", "carherrera@outlook.es")).build();
+        ApiInfo apiInfo = new ApiInfoBuilder()
+                .description("RESTFul service provisioning search capabilities on top of decentralized datasets")
+                .title("FilmsSearch")
+                .contact(new Contact("Ariel Herrera", "", "carherrera@outlook.es"))
+                .build();
         return new Docket(DocumentationType.SWAGGER_2).apiInfo(apiInfo)
                 .select()
                 .apis(RequestHandlerSelectors.basePackage("com.insights.controller"))

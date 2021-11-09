@@ -11,7 +11,9 @@ import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Sort;
 import org.springframework.stereotype.Service;
 import reactor.core.publisher.Flux;
-
+/*
+* Service dealing with Flux and Mono and data conversion as well for retrieving semantic information
+*/
 @Service
 public class MovieService {
     private final MovieRepository movieRepository;
